@@ -1,0 +1,137 @@
+\documentclass[12pt,a4paper]{article}
+
+% ==================== PACKAGES ====================
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{geometry}
+\usepackage{graphicx}
+%\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{pgffor}
+\usepackage{pdflscape}
+\usepackage{chngcntr}
+\counterwithin{table}{subsection}
+\usepackage{graphicx}
+\usepackage{float}
+% ==================== PAGE SETUP ====================
+\geometry{
+	left=2.5cm,
+	right=2.5cm,
+	top=3cm,
+	bottom=3cm
+}
+
+% ==================== HEADER & FOOTER ====================
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{Proyecto de Estadística}
+\fancyhead[R]{UCV - 2025}
+\fancyfoot[C]{\thepage}
+
+% ==================== HYPERLINKS ====================
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	filecolor=magenta,      
+	urlcolor=cyan,
+	citecolor=blue
+}
+
+% ==================== DOCUMENT ====================
+\begin{document}
+	
+	% ==================== TITLE PAGE ====================
+	\begin{titlepage}
+		\centering
+		
+		\vspace*{1cm}
+		
+		% Universidad header
+		{\Large\textbf{Universidad Central de Venezuela}}\\[0.3cm]
+		{\large Facultad de Ciencias}\\[0.2cm]
+		{\large Escuela de Matemáticas}\\[0.2cm]
+		{\large Estadística}\\[0.5cm]
+		
+		\vspace{1cm}
+		
+		% Course info
+		{\large Período Lectivo: 2 - 2025}\\[0.3cm]
+		{\large Prof.: Orlian Prato}\\[2cm]
+		
+		% Title
+		\rule{\linewidth}{0.5mm}\\[0.4cm]
+		{\huge\bfseries Proyecto de Estadística}\\[0.2cm]
+		{\Large\bfseries Análisis de Rendimiento Futbolístico 2024}\\[0.4cm]
+		\rule{\linewidth}{0.5mm}\\[2cm]
+		
+		\vfill
+		
+		% Author info
+		{\large Autor(es):}\\[0.3cm]
+		{\large Nombre del Estudiante}\\
+		{\large C.I.: V-00.000.000}\\[2cm]
+		
+		\vfill
+		
+		% Date and location
+		{\large Caracas, Venezuela}\\
+		{\large \today}
+		
+	\end{titlepage}
+	
+	% ==================== PAGE ====================
+	
+	\newpage
+	\section{Valores atipicos}
+	
+	
+	\section{Estadísticas Descriptivas por Equipo}
+	
+	\subsection{FC Barcelona}
+	\input{tables/tabla_esp_barcelona.tex}
+	
+	\subsection{Real Madrid}
+	\input{tables/tabla_esp_real_madrid.tex}
+	
+	\subsection{Borussia Dortmund}
+	\input{tables/tabla_ger_dortmund.tex}
+	
+	\subsection{Bayern Munich}
+	\input{tables/tabla_ger_bayern_munich.tex}
+	
+	\subsection{Paris Saint-Germain}
+	\input{tables/tabla_fra_psg.tex}
+	
+	\subsection{Arsenal FC}
+	\input{tables/tabla_eng_arsenal.tex}
+	
+	\subsection{Chelsea FC}
+	\input{tables/tabla_eng_chelsea.tex}
+	
+	\subsection{Liverpool FC}
+	\input{tables/tabla_eng_liverpool.tex}
+	
+	\subsection{Manchester City}
+	\input{tables/tabla_eng_man_city.tex}
+	
+	\subsection{Atlético Madrid}
+	\input{tables/tabla_esp_atletico_madrid.tex}
+	
+	\newpage
+	\section{Matrices de Correlación por Equipo}
+	
+	\newpage
+	\section{Matrices de Correlación por Equipo}
+	
+	\end{document}
