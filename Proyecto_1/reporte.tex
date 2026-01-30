@@ -35,7 +35,7 @@
 % ==================== HEADER & FOOTER ====================
 \pagestyle{fancy}
 \fancyhf{}
-\fancyhead[L]{Proyecto de Estadística}
+\fancyhead[L]{Análisis de rendimiento Futbolístico (2024)}
 \fancyhead[R]{UCV - 2025}
 \fancyfoot[C]{\thepage}
 
@@ -71,17 +71,20 @@
 		
 		% Title
 		\rule{\linewidth}{0.5mm}\\[0.4cm]
-		{\huge\bfseries Proyecto de Estadística}\\[0.2cm]
+		{\huge\bfseries Proyecto Nro.1}\\[0.2cm]
 		{\Large\bfseries Análisis de Rendimiento Futbolístico 2024}\\[0.4cm]
-		\rule{\linewidth}{0.5mm}\\[2cm]
-		
+		\rule{\linewidth}{0.5mm}\\[0.2cm]
+		\begin{small}
+		{comparativo entre equipos elite y equipos de mediano/bajo rendimiento}\\[2cm]
+		\end{small}
 		\vfill
 		
 		% Author info
 		{\large Autor(es):}\\[0.3cm]
-		{\large Nombre del Estudiante}\\
-		{\large C.I.: V-00.000.000}\\[2cm]
-		
+		{\large Chacón Kimberly}\\
+		{\large C.I.: V-27.254.966}\\[0.1cm]
+		{\large Guevara Anyeli}\\
+		{\large C.I.: V-26.989.462}\\[2cm]
 		\vfill
 		
 		% Date and location
@@ -91,6 +94,21 @@
 	\end{titlepage}
 	
 	% ==================== PAGE ====================
+	\newpage
+	
+	\vspace*{1cm}
+	\begin{center}
+	% Introducción header
+	{\Large\textbf{Abstract}}\\[0.3cm]
+	\end{center} 
+	Este informe, presenta un análisis comparativo tomando los 10 equipos TOP del año 2024 versus 10 equipos de mediano/bajo nivel, con el fin de cuantificar las variables métricas que definen la superioridad competitiva. Empleando DataFrames y análisis de estadísticos derivados del desempeño de cada equipo en cancha, los hallazgos principales muestran que si bien los estadísticos globales para cada grupo parecen no mostrar mayor diferencia, al comparar los estadísticos por equipo sí se pueden apreciar diferencias bastante marcadas en cuanto al desempeño, estrategia y control del juego. 
+	Para entrar un poco más en contexto, en el equipo elite tenemos los siguientes equipos: Barcelona, Real Madrid, Paris Saint-Germain, Bayern Munich, Chelsea,
+	Liverpool, Manchester City, Arsenal, Borussia Dortmund, Atlético Madrid.
+	En comparativa se tomaron 10 equipos de mediano/bajo nivel tomando como guía los paises dentro de los cuales hacen vida los equipos elite, esto buscando mantener el contexto cultural dentro del cual se desenvuelven ambos grupos, estos equipos son: Cadiz Club, Unión Deportiva Almería, Clermont Foot 63, VFL Bochum, Burnley Football Club, Nottingham Forest, Sheffield United, Luton Town, FC Köln, Granada CF.
+	\newpage
+	\section{FASE 1: Preparación y Limpieza de Datos}
+	En esta fase, nos encontramos con ciertas particularidades como juegos sin registro y anotaciones que no reflejaban la naturaleza del juego, como por ejemplo el valor 0 en possesionPct.  Según el caso se realizó la eliminación de registros sin datos y se imputó la mediana para los valores incongruentes en las variables possessionPct, foulsCommitted, accuratePasses, totalPasses, passPct, totalLongBalls, accurateLongBalls, longballPct, effectiveTackles, tacklePct, interceptions, effectiveClearance, totalClearance. Por otro lado se decidió no aplicar cambios a los valores atípicos fuera de los bigotes, buscando preservar de la mejor manera el estilo de juego de cada club; esto dió paso a tabla de datos listos para los análisis de la siguientes fases.
+	\\[1cm]
 	
 	\newpage
 	\section{Valores atipicos}
