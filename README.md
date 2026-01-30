@@ -1,2 +1,7 @@
 # ESTADISTICA_sem_II_2025
 Código de proyectos para el curso de Estadística de la Licenciatura en Matemáticas de la Universidad Central de Venezuela.
+FASE 5. Este código hará lo siguiente:Realizar pruebas t independientes para cada variable, comparando ambos DataFrames (el de los 10 mejores vs. los de nivel bajo).Mostrar los resultados, incluyendo: las medias, la diferencia entre ellas, el estadístico t, los p-valores y la significancia estadística.Guardar los resultados en un archivo CSV.Crear dos gráficos de barras:Una comparación simple de las medias.Una comparación con asteriscos (*) que marcan las diferencias estadísticamente significativas (p < 0.05).
+
+Para que tu profesor no te "corrija" la validez del estudio, recuerda que la prueba $t$ asume:Muestras independientes: El rendimiento del Bayern no depende del rendimiento de un equipo de tabla baja de otra liga.Distribución normal: Los datos deben seguir una campana de Gauss (o que el tamaño de la muestra sea lo suficientemente grande, aunque con $n=10$ por grupo estamos en el límite, por eso la prueba $t$ es la adecuada).Varianza: La función maneja si las varianzas son iguales o diferentes (lo que se conoce como la prueba de Welch).
+
+En tu reporte de LaTeX, cuando veas los asteriscos (*) en los gráficos, puedes escribir algo así:"Como se observa en la Figura X, variables como la 'Posesión' y 'Goles anotados' presentan un $p-valor < 0.05$ (indicado con asteriscos), lo que nos permite rechazar la hipótesis nula y afirmar que la diferencia entre ambos grupos no es producto del azar." 

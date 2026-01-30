@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.25)  30 JAN 2026 00:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.25)  30 JAN 2026 00:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -813,21 +813,21 @@ LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
  ***********
 Package rerunfilecheck Info: File `reporte.out' has not changed.
-(rerunfilecheck)             Checksum: 366DBE4FF8965D3A807291104BBCAEF7;2356.
+(rerunfilecheck)             Checksum: C75F2035FC2AF5F16FCA2B73A4D1BC00;2377.
  ) 
 Here is how much of TeX's memory you used:
- 19877 strings out of 467871
- 346022 string characters out of 5418376
- 772183 words of memory out of 5000000
- 48422 multiletter control sequences out of 15000+600000
- 634484 words of font info for 65 fonts, out of 8000000 for 9000
+ 19878 strings out of 467871
+ 346037 string characters out of 5418376
+ 771184 words of memory out of 5000000
+ 48423 multiletter control sequences out of 15000+600000
+ 634791 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,12n,79p,801b,515s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,12n,79p,819b,515s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/kimac/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
 cmbx12.pfb><C:/Users/kimac/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
 fonts/cm/cmr10.pfb><C:/Users/kimac/AppData/Local/Programs/MiKTeX/fonts/type1/pu
 blic/amsfonts/cm/cmr12.pfb>
-Output written on reporte.pdf (15 pages, 94716 bytes).
+Output written on reporte.pdf (15 pages, 95945 bytes).
 PDF statistics:
  164 PDF objects out of 1000 (max. 8388607)
  40 named destinations out of 1000 (max. 500000)
