@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.25)  30 JAN 2026 00:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.25)  31 JAN 2026 00:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**./reporte.tex
-(reporte.tex
+**./ESTADISTICA_PROYECTO_1_REPORTE.tex
+(ESTADISTICA_PROYECTO_1_REPORTE.tex
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
 (C:\Users\kimac\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
@@ -130,29 +130,51 @@ File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen158
 \Gin@req@width=\dimen159
-) (C:\Users\kimac\AppData\Local\Programs\MiKTeX\tex/latex/tools\longtable.sty
+)
+(C:\Users\kimac\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen160
+\lightrulewidth=\dimen161
+\cmidrulewidth=\dimen162
+\belowrulesep=\dimen163
+\belowbottomsep=\dimen164
+\aboverulesep=\dimen165
+\abovetopsep=\dimen166
+\cmidrulesep=\dimen167
+\cmidrulekern=\dimen168
+\defaultaddspace=\dimen169
+\@cmidla=\count289
+\@cmidlb=\count290
+\@aboverulesep=\dimen170
+\@belowrulesep=\dimen171
+\@thisruleclass=\count291
+\@lastruleclass=\count292
+\@thisrulewidth=\dimen172
+)
+(C:\Users\kimac\AppData\Local\Programs\MiKTeX\tex/latex/tools\longtable.sty
 Package: longtable 2025-10-13 v4.24 Multi-page Table package (DPC)
 \LTleft=\skip51
 \LTright=\skip52
 \LTpre=\skip53
 \LTpost=\skip54
-\LTchunksize=\count289
-\LTcapwidth=\dimen160
+\LTchunksize=\count293
+\LTcapwidth=\dimen173
 \LT@head=\box53
 \LT@firsthead=\box54
 \LT@foot=\box55
 \LT@lastfoot=\box56
 \LT@gbox=\box57
-\LT@cols=\count290
-\LT@rows=\count291
-\c@LT@tables=\count292
-\c@LT@chunks=\count293
+\LT@cols=\count294
+\LT@rows=\count295
+\c@LT@tables=\count296
+\c@LT@chunks=\count297
 \LT@p@ftn=\toks22
-) (C:\Users\kimac\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
+)
+(C:\Users\kimac\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
 Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
-\col@sep=\dimen161
+\col@sep=\dimen174
 \ar@mcellbox=\box58
-\extrarowheight=\dimen162
+\extrarowheight=\dimen175
 \NC@list=\toks23
 \extratabsurround=\skip55
 \backup@length=\skip56
@@ -161,9 +183,9 @@ Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
 (C:\Users\kimac\AppData\Local\Programs\MiKTeX\tex/latex/multirow\multirow.sty
 Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
 \multirow@colwidth=\skip57
-\multirow@cntb=\count294
+\multirow@cntb=\count298
 \multirow@dima=\skip58
-\bigstrutjot=\dimen163
+\bigstrutjot=\dimen176
 )
 (C:\Users\kimac\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
 Package: amsmath 2025/07/09 v2.17z AMS math features
@@ -176,23 +198,23 @@ Package: amstext 2024/11/17 v2.01 AMS text
 (C:\Users\kimac\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks24
-\ex@=\dimen164
+\ex@=\dimen177
 ))
 (C:\Users\kimac\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen165
+\pmbraise@=\dimen178
 )
 (C:\Users\kimac\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
-\inf@bad=\count295
+\inf@bad=\count299
 LaTeX Info: Redefining \frac on input line 233.
-\uproot@=\count296
-\leftroot@=\count297
+\uproot@=\count300
+\leftroot@=\count301
 LaTeX Info: Redefining \overline on input line 398.
 LaTeX Info: Redefining \colon on input line 409.
-\classnum@=\count298
-\DOTSCASE@=\count299
+\classnum@=\count302
+\DOTSCASE@=\count303
 LaTeX Info: Redefining \ldots on input line 495.
 LaTeX Info: Redefining \dots on input line 498.
 LaTeX Info: Redefining \cdots on input line 619.
@@ -202,30 +224,30 @@ LaTeX Info: Redefining \big on input line 721.
 LaTeX Info: Redefining \Big on input line 722.
 LaTeX Info: Redefining \bigg on input line 723.
 LaTeX Info: Redefining \Bigg on input line 724.
-\big@size=\dimen166
+\big@size=\dimen179
 LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
-\macc@depth=\count300
+\macc@depth=\count304
 LaTeX Info: Redefining \bmod on input line 904.
 LaTeX Info: Redefining \pmod on input line 909.
 LaTeX Info: Redefining \smash on input line 939.
 LaTeX Info: Redefining \relbar on input line 969.
 LaTeX Info: Redefining \Relbar on input line 970.
-\c@MaxMatrixCols=\count301
+\c@MaxMatrixCols=\count305
 \dotsspace@=\muskip17
-\c@parentequation=\count302
-\dspbrk@lvl=\count303
+\c@parentequation=\count306
+\dspbrk@lvl=\count307
 \tag@help=\toks25
-\row@=\count304
-\column@=\count305
-\maxfields@=\count306
+\row@=\count308
+\column@=\count309
+\maxfields@=\count310
 \andhelp@=\toks26
-\eqnshift@=\dimen167
-\alignsep@=\dimen168
-\tagshift@=\dimen169
-\tagwidth@=\dimen170
-\totwidth@=\dimen171
-\lineht@=\dimen172
+\eqnshift@=\dimen180
+\alignsep@=\dimen181
+\tagshift@=\dimen182
+\tagwidth@=\dimen183
+\totwidth@=\dimen184
+\lineht@=\dimen185
 \@envbody=\toks27
 \multlinegap=\skip60
 \multlinetaggap=\skip61
@@ -290,20 +312,20 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 (C:\Users\kimac\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
-\c@section@level=\count307
+\c@section@level=\count311
 )
 (C:\Users\kimac\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
 Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count308
+\etb@tempcnta=\count312
 )
 (C:\Users\kimac\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\stringenc.s
 ty
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
 )
 )
-\@linkdim=\dimen173
-\Hy@linkcounter=\count309
-\Hy@pagecounter=\count310
+\@linkdim=\dimen186
+\Hy@linkcounter=\count313
+\Hy@pagecounter=\count314
  (C:\Users\kimac\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
 File: pd1enc.def 2025-07-12 v7.01o Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
@@ -311,7 +333,7 @@ Now handling font encoding PD1 ...
 ) (C:\Users\kimac\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count311
+\Hy@SavedSpaceFactor=\count315
  (C:\Users\kimac\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
 File: puenc.def 2025-07-12 v7.01o Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
@@ -324,14 +346,14 @@ Package hyperref Info: Plain pages OFF on input line 4210.
 Package hyperref Info: Backreferencing OFF on input line 4215.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4462.
-\c@Hy@tempcnt=\count312
+\c@Hy@tempcnt=\count316
 
 (C:\Users\kimac\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
 \Urlmuskip=\muskip18
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4801.
-\XeTeXLinkMargin=\dimen174
+\XeTeXLinkMargin=\dimen187
 
 (C:\Users\kimac\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
@@ -341,9 +363,9 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count313
-\Field@Width=\dimen175
-\Fld@charsize=\dimen176
+\Fld@menulength=\count317
+\Field@Width=\dimen188
+\Fld@charsize=\dimen189
 Package hyperref Info: Hyper figures OFF on input line 6078.
 Package hyperref Info: Link nesting OFF on input line 6083.
 Package hyperref Info: Hyper index ON on input line 6086.
@@ -351,16 +373,16 @@ Package hyperref Info: backreferencing OFF on input line 6093.
 Package hyperref Info: Link coloring OFF on input line 6098.
 Package hyperref Info: Link coloring with OCG OFF on input line 6103.
 Package hyperref Info: PDF/A mode OFF on input line 6108.
-\Hy@abspage=\count314
-\c@Item=\count315
-\c@Hfootnote=\count316
+\Hy@abspage=\count318
+\c@Item=\count319
+\c@Hfootnote=\count320
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
 (C:\Users\kimac\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
 File: hpdftex.def 2025-07-12 v7.01o Hyperref driver for pdfTeX
-\Fld@listcount=\count317
-\c@bookmark@seq@number=\count318
+\Fld@listcount=\count321
+\c@bookmark@seq@number=\count322
 
 (C:\Users\kimac\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfil
 echeck.sty
@@ -377,7 +399,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 (C:\Users\kimac\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count319
+\c@float@type=\count323
 \float@exts=\toks29
 \float@box=\box62
 \@float@everytoks=\toks30
@@ -388,18 +410,18 @@ Package: caption 2023/08/05 v3.6o Customizing captions (AR)
 
 (C:\Users\kimac\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
 Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
-\caption@tempdima=\dimen177
-\captionmargin=\dimen178
-\caption@leftmargin=\dimen179
-\caption@rightmargin=\dimen180
-\caption@width=\dimen181
-\caption@indent=\dimen182
-\caption@parindent=\dimen183
-\caption@hangindent=\dimen184
+\caption@tempdima=\dimen190
+\captionmargin=\dimen191
+\caption@leftmargin=\dimen192
+\caption@rightmargin=\dimen193
+\caption@width=\dimen194
+\caption@indent=\dimen195
+\caption@parindent=\dimen196
+\caption@hangindent=\dimen197
 Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count320
-\c@continuedfloat=\count321
+\c@caption@flags=\count324
+\c@continuedfloat=\count325
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: longtable package is loaded.
@@ -410,9 +432,9 @@ Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
 ty
 Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
 Package caption Info: New subtype `subfigure' on input line 238.
-\c@subfigure=\count322
+\c@subfigure=\count326
 Package caption Info: New subtype `subtable' on input line 238.
-\c@subtable=\count323
+\c@subtable=\count327
 ) (C:\Users\kimac\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
 Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
 
@@ -453,12 +475,12 @@ Package: titlesec 2025/01/04 v2.17 Sectioning titles
 \ttl@box=\box64
 \beforetitleunit=\skip77
 \aftertitleunit=\skip78
-\ttl@plus=\dimen185
-\ttl@minus=\dimen186
+\ttl@plus=\dimen198
+\ttl@minus=\dimen199
 \ttl@toksa=\toks32
-\titlewidth=\dimen187
-\titlewidthlast=\dimen188
-\titlewidthfirst=\dimen189
+\titlewidth=\dimen256
+\titlewidthlast=\dimen257
+\titlewidthfirst=\dimen258
 )
 (C:\Users\kimac\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgffor.st
 y
@@ -467,8 +489,8 @@ y
 (C:\Users\kimac\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
 -common.tex
 \pgfutil@everybye=\toks33
-\pgfutil@tempdima=\dimen190
-\pgfutil@tempdimb=\dimen191
+\pgfutil@tempdima=\dimen259
+\pgfutil@tempdimb=\dimen260
 )
 (C:\Users\kimac\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
 -latex.def
@@ -495,23 +517,23 @@ libraryfiltered.code.tex
 .tex
 (C:\Users\kimac\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathutil.
 code.tex
-\pgf@x=\dimen192
-\pgf@xa=\dimen193
-\pgf@xb=\dimen194
-\pgf@xc=\dimen195
-\pgf@y=\dimen196
-\pgf@ya=\dimen197
-\pgf@yb=\dimen198
-\pgf@yc=\dimen199
-\c@pgf@counta=\count324
-\c@pgf@countb=\count325
-\c@pgf@countc=\count326
-\c@pgf@countd=\count327
+\pgf@x=\dimen261
+\pgf@xa=\dimen262
+\pgf@xb=\dimen263
+\pgf@xc=\dimen264
+\pgf@y=\dimen265
+\pgf@ya=\dimen266
+\pgf@yb=\dimen267
+\pgf@yc=\dimen268
+\c@pgf@counta=\count328
+\c@pgf@countb=\count329
+\c@pgf@countc=\count330
+\c@pgf@countd=\count331
 )
 (C:\Users\kimac\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathparse
 r.code.tex
-\pgfmath@dimen=\dimen256
-\pgfmath@count=\count328
+\pgfmath@dimen=\dimen269
+\pgfmath@count=\count332
 \pgfmath@box=\box66
 \pgfmath@toks=\toks37
 \pgfmath@stack@operand=\toks38
@@ -539,13 +561,13 @@ ions.integerarithmetics.code.tex)
 code.tex)
 (C:\Users\kimac\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfloat
 .code.tex
-\c@pgfmathroundto@lastzeros=\count329
+\c@pgfmathroundto@lastzeros=\count333
 )))
 (C:\Users\kimac\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgffor.
 code.tex
 Package: pgffor 2025-08-29 v3.1.11a (3.1.11a)
-\pgffor@iter=\dimen257
-\pgffor@skip=\dimen258
+\pgffor@iter=\dimen270
+\pgffor@skip=\dimen271
 \pgffor@stack=\toks40
 \pgffor@toks=\toks41
 ))
@@ -567,40 +589,40 @@ Package: chngcntr 2018/04/09 v1.1a change counter resetting
 Package chngcntr Info: \counterwithout already defined.
 (chngcntr)             Quitting chngcntr on input line 21.
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 49.
+Package hyperref Info: Option `colorlinks' set `true' on input line 50.
 
 (C:\Users\kimac\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
 tex.def
 File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count330
-) (reporte.aux
+\l__color_backend_stack_int=\count334
+) (ESTADISTICA_PROYECTO_1_REPORTE.aux
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
 Package babel Info: 'spanish' activates 'spanish' shorthands.
 (babel)             Reported on input line 11.
 )
-\openout1 = `reporte.aux'.
+\openout1 = `ESTADISTICA_PROYECTO_1_REPORTE.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Info: Redefining \. on input line 52.
-LaTeX Info: Redefining \% on input line 52.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Info: Redefining \. on input line 53.
+LaTeX Info: Redefining \% on input line 53.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -640,16 +662,16 @@ LaTeX Info: Redefining \% on input line 52.
 (C:\Users\kimac\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count331
-\scratchdimen=\dimen259
+\scratchcounter=\count335
+\scratchdimen=\dimen272
 \scratchbox=\box67
-\nofMPsegments=\count332
-\nofMParguments=\count333
+\nofMPsegments=\count336
+\nofMParguments=\count337
 \everyMPshowfont=\toks42
-\MPscratchCnt=\count334
-\MPscratchDim=\dimen260
-\MPnumerator=\count335
-\makeMPintoPDFobject=\count336
+\MPscratchCnt=\count338
+\MPscratchDim=\dimen273
+\MPnumerator=\count339
+\makeMPintoPDFobject=\count340
 \everyMPtoPDFconversion=\toks43
 )
 (C:\Users\kimac\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
@@ -662,16 +684,28 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 fg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring ON on input line 52.
- (reporte.out) (reporte.out)
+Package hyperref Info: Link coloring ON on input line 53.
+ (ESTADISTICA_PROYECTO_1_REPORTE.out) (ESTADISTICA_PROYECTO_1_REPORTE.out)
 \@outlinefile=\write3
-\openout3 = `reporte.out'.
+\openout3 = `ESTADISTICA_PROYECTO_1_REPORTE.out'.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
- [1
+
+[1
 
 {C:/Users/kimac/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+Overfull \hbox (2.53506pt too wide) in paragraph at lines 105--110
+\OT1/cmr/m/n/12 En el pre-sen-te in-for-me, los 10 equi-pos TOP men-cio-na-dos 
+es-tan agru-pa-dos co-mo \OT1/cmr/bx/n/12 equip.rep\OT1/cmr/m/n/12 ,
+ []
+
+
+Overfull \hbox (7.67961pt too wide) in paragraph at lines 105--110
+\OT1/cmr/m/n/12 por otro la-do los equi-pos de me-diano/bajo ren-di-mien-to se 
+ven re-fle-ja-dos co-mo \OT1/cmr/bx/n/12 equip.no.rep 
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -684,9 +718,62 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.108 	\newpage
+l.110 	\newpage
                 [1]
-Underfull \hbox (badness 10000) in paragraph at lines 110--112
+<NOTEBOOKS/comparison_barplot_large_scale.png, id=26, 1003.1076pt x 569.0058pt>
+
+File: NOTEBOOKS/comparison_barplot_large_scale.png Graphic file (type png)
+<use NOTEBOOKS/comparison_barplot_large_scale.png>
+Package pdftex.def Info: NOTEBOOKS/comparison_barplot_large_scale.png  used on 
+input line 120.
+(pdftex.def)             Requested size: 409.71692pt x 232.4083pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[2]
+<NOTEBOOKS/comparison_barplot_aprovechamiento.png, id=32, 714.0276pt x 569.0058
+pt>
+File: NOTEBOOKS/comparison_barplot_aprovechamiento.png Graphic file (type png)
+<use NOTEBOOKS/comparison_barplot_aprovechamiento.png>
+Package pdftex.def Info: NOTEBOOKS/comparison_barplot_aprovechamiento.png  used
+ on input line 128.
+(pdftex.def)             Requested size: 218.51521pt x 174.13257pt.
+<NOTEBOOKS/comparison_barplot_peligrosidad.png, id=33, 569.7285pt x 569.0058pt>
+
+File: NOTEBOOKS/comparison_barplot_peligrosidad.png Graphic file (type png)
+<use NOTEBOOKS/comparison_barplot_peligrosidad.png>
+Package pdftex.def Info: NOTEBOOKS/comparison_barplot_peligrosidad.png  used on
+ input line 135.
+(pdftex.def)             Requested size: 218.51521pt x 218.23874pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[3 <./NOTEBOOKS/comparison_barplot_large_scale.png> <./NOTEBOOKS/comparison_bar
+plot_aprovechamiento.png> <./NOTEBOOKS/comparison_barplot_peligrosidad.png>]
+(tables/t_test_complete.tex
+LaTeX Font Info:    Trying to load font information for U+msa on input line 18.
+
+
+(C:\Users\kimac\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 18.
+
+
+(C:\Users\kimac\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+))
+Underfull \hbox (badness 10000) in paragraph at lines 148--150
 
  []
 
@@ -697,114 +784,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[2] (tables/tabla_esp_barcelona.tex
-LaTeX Font Info:    Trying to load font information for U+msa on input line 6.
-
-(C:\Users\kimac\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 6.
-
-(C:\Users\kimac\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-))
-(tables/tabla_esp_real_madrid.tex)
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[3] (tables/tabla_ger_dortmund.tex)
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[4] (tables/tabla_ger_bayern_munich.tex)
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[5] (tables/tabla_fra_psg.tex)
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[6] (tables/tabla_eng_arsenal.tex)
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[7] (tables/tabla_eng_chelsea.tex)
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[8] (tables/tabla_eng_liverpool.tex)
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[9] (tables/tabla_eng_man_city.tex)
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[10] (tables/tabla_esp_atletico_madrid.tex)
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[11]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[12]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[13]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[14] (reporte.aux
+[4] (ESTADISTICA_PROYECTO_1_REPORTE.aux
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
 )
@@ -812,24 +792,26 @@ LaTeX Info: Redefining \% on input line 11.
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
  ***********
-Package rerunfilecheck Info: File `reporte.out' has not changed.
-(rerunfilecheck)             Checksum: C75F2035FC2AF5F16FCA2B73A4D1BC00;2377.
+Package rerunfilecheck Info: File `ESTADISTICA_PROYECTO_1_REPORTE.out' has not 
+changed.
+(rerunfilecheck)             Checksum: F6999574086A203C24BC0318DA394691;565.
  ) 
 Here is how much of TeX's memory you used:
- 19878 strings out of 467871
- 346037 string characters out of 5418376
- 771184 words of memory out of 5000000
- 48423 multiletter control sequences out of 15000+600000
- 634791 words of font info for 66 fonts, out of 8000000 for 9000
+ 19884 strings out of 467871
+ 346141 string characters out of 5418376
+ 750749 words of memory out of 5000000
+ 48480 multiletter control sequences out of 15000+600000
+ 635899 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,12n,79p,819b,515s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,12n,79p,1177b,549s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/kimac/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
 cmbx12.pfb><C:/Users/kimac/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
 fonts/cm/cmr10.pfb><C:/Users/kimac/AppData/Local/Programs/MiKTeX/fonts/type1/pu
-blic/amsfonts/cm/cmr12.pfb>
-Output written on reporte.pdf (15 pages, 95945 bytes).
+blic/amsfonts/cm/cmr12.pfb><C:/Users/kimac/AppData/Local/Programs/MiKTeX/fonts/
+type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on ESTADISTICA_PROYECTO_1_REPORTE.pdf (5 pages, 490751 bytes).
 PDF statistics:
- 164 PDF objects out of 1000 (max. 8388607)
- 40 named destinations out of 1000 (max. 500000)
- 121 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 73 PDF objects out of 1000 (max. 8388607)
+ 11 named destinations out of 1000 (max. 500000)
+ 40 words of extra memory for PDF output out of 10000 (max. 10000000)
 
