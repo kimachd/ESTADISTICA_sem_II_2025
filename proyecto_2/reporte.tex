@@ -26,6 +26,7 @@
 \usepackage{float}
 \usepackage{hyperref}
 \usepackage{graphicx}
+\usepackage{hyperref}
 % ==================== PAGE SETUP ====================
 \geometry{
 	left=2.5cm,
@@ -128,6 +129,10 @@
 		\end{tabular}
 		\caption{Parámetros estimados por Descenso del Gradiente}
 		\end{table}
+		Conclusion:
+	    Como se puede apreciar en los Cuadros 1.1.1 y 1.1.2, al contrastar los resultados obtenidos mediante el método de Mínimos Cuadrados Ordinarios (MCO) y el algoritmo de Descenso del Gradiente, se observa una convergencia significativa en los parámetros calculados. 
+		
+		Específicamente, se halló una diferencia numérica de apenas $6.9883$ para el coeficiente de la pendiente ($\hat{\beta}_1$) y de $76.1065$ para el intercepto ($\hat{\beta}_0$). Esta proximidad en los valores de $\hat{\beta}_1$ y $\hat{\beta}_0$ indica que ambos métodos, a pesar de seguir procedimientos de optimización distintos, tienden a coincidir en la definición de la recta de regresión sobre la data empleada, validando así la precisión de la implementación numérica del gradiente frente a la solución analítica.
 
 \subsection{Analizar si los resultados coinciden o presentan diferencias.}
 
@@ -138,24 +143,33 @@
 	\hline
 	\textbf{Parámetro} & \textbf{MCO} & \textbf{Descenso del Gradiente} \\
 	\hline
-	$\hat{\beta}_1$ (pendiente)      & $8{,}846.0391$       & $8{,}853.0274$       \\
-	$\hat{\beta}_0$ (punto de corte) & $27{,}728.0882$      & $27{,}651.9817$      \\
-	ECM                              & $475{,}308{,}282.60$ & $475{,}309{,}989.00$ \\
+	$\hat{\beta}_1$ (pendiente)      & $8846.0391$       & $8853.0274$       \\
+	$\hat{\beta}_0$ (punto de corte) & $27728.0882$      & $27651.9817$      \\
+	ECM                              & $475308282{,}60$ & $475309989.00$ \\
 	$R^2$                            & $0.803381$           & $0.803381$           \\
 	\hline
 	\end{tabular}
 	\end{table}
-
-\newpage
+	Conclusión:
+	Como se puede observar en el \textbf{Cuadro 1.2.1}, al contrastar los parámetros obtenidos por ambos métodos, se evidencia que los valores de $\hat{\beta}_1$ y $\hat{\beta}_0$ son muy similares entre sí. En cuanto al Error Cuadrático Medio (ECM), los resultados coinciden significativamente hasta el quinto término, ya que el método analítico arroja un valor de $475308282,60$ y el método de Descenso del Gradiente resulta en $475309989,00$.
+	
+	Debido a que el ECM mide promedios de errores, esta diferencia resulta marginal en términos de magnitud relativa, pudiendo establecerse la siguiente aproximación:
+	\begin{equation}
+		475308282,60 \approx 47531 \times 10^4 \approx 475309989,00
+	\end{equation}
+	
+	Por ende, nos encontramos en el mismo escenario de convergencia observado en los parámetros $\hat{\beta}_1$ y $\hat{\beta}_0$. Finalmente, el coeficiente de determinación ($R^2$) es idéntico para ambos métodos ($0,803381$); dado que este indicador mide qué tan bien se ajusta el modelo a los datos, podemos concluir que ambos modelos se aproximan a la realidad de la misma manera.
+	
+	En virtud de lo anterior, se determina que los resultados coinciden plenamente entre sí y que no existen diferencias sustanciales entre la aplicación del método analítico y el algoritmo de optimización numérica.
+	
 \subsection{Graficar los datos originales (YearsExperience vs. Salary).}
-
 	\begin{figure}[h!]
     	\centering
-    	\includegraphics[width=\textwidth]{images/exploratory_analysis.png}
+    	\includegraphics[width=0.65\textwidth]{images/exploratory_analysis.png}
    	 \caption{Análisis exploratorio: dispersión y distribución del salario}
    	 \label{fig:exploratory}
 	\end{figure}
-
+\newpage 
 \subsection{Superponer en el mismo gráfico las rectas obtenidas por ambos métodos.}
 
 	\begin{figure}[h!]
@@ -165,15 +179,15 @@
    	 \label{fig:exploratory}
 	\end{figure}
 
-\newpage
 \subsection{Graficar la evolución de la función de pérdida durante las iteraciones del Descenso del Gradiente.}
 
 	\begin{figure}[h!]
     	\centering
-    	\includegraphics[width=\textwidth]{images/funcion_perdida.png}
+    	\includegraphics[width=0.75\textwidth]{images/funcion_perdida.png}
    	 \caption{Función perdida}
    	 \label{fig:exploratory}
 	\end{figure}
+	Interpretación: aquí podemos observar cómo el modelo va aprendiendo en base a la cantidad de pasos con un cambio grande entre las primeras 200 iteraciones y estabilizandoze desde aproximadamente las 300 en adelante.
 	
 \newpage
 \section{Segunda Parte: Análisis y Clasificación de la Calidad de la Leche mediante Regresión Logística}
@@ -202,8 +216,7 @@
 		\end{table}
 
     \item[$\scalebox{0.7}{$\blacksquare$}$] Identificación y tratamiento de valores faltantes o atípicos.
-
-	Las columnas Taste, Odor, Fat, turbidity solo tienen valores 1 y 0, pH, Temperature serán Escalados y Colour no se observan valors atipicos, no fue necesario tratamiento de valores atípicos
+    En este caso, se puede observar que con un valor total de 1059 datos proporcionados, no hay valores faltantes dentro del DataFrame (resumen observable en el cuadro 2.1.1). En cuanto a los valores atípicos, se decidió dejar como tratamiento el 'Escalado de características' solicitado en el ultimo requerimiento de este paso 1; esto debido a que los valores atipicos estan dentro del rango posible (como en el caso del PH) o son muy pequeños en cantidad a comparación de la cantidad de datos proporcionados en el DataFrame; en este orden de ideas, con el 'Escalado' mitigamos el impacto numérico que estos puedan tener en la data.
 
     \item[$\scalebox{0.7}{$\blacksquare$}$] Codificación de la variable objetivo.
 
@@ -232,7 +245,7 @@
 	from sklearn.preprocessing import StandardScaler
 	\end{verbatim}
 	
-	para escalar las variables \texttt{pH} y \texttt{Temperature}, generando dos nuevas columnas para ser usadas en la regresión:
+	para escalar las variables \texttt{pH} y \texttt{Temprature}, generando dos nuevas columnas para ser usadas en la regresión:
 	
 	\begin{verbatim}
 	"pH_escalado", "Temprature_escalado"
@@ -289,7 +302,8 @@
     \label{fig:Histograma}
      \end{center}
 \end{itemize}
-
+Interpretación: Se realizó un gráfico descriptivo con cada variable objetivo cuyo fin fue el de determinar la distribución de los datos en las categorías \textit{High}, \textit{Low} y \textit{Medium} mediante la variable \textit{'Grade'}. A partir de las visualizaciones, se observó que la mayor parte de la muestra se concentra en la categoría de baja calidad (\textit{Low}), seguida en frecuencia por la categoría media (\textit{Medium}). Por el contrario, la categoría de alta calidad (\textit{High}) resultó ser la menos frecuente, presentando casi la mitad de la frecuencia observada en la clase predominante (\textit{Low}).
+Este comportamiento evidencia que las clases se encuentran desbalanceadas. En consecuencia, esta disparidad en la representatividad de los datos afectará la capacidad predictiva del modelo de regresión logística, particularmente en la precisión de la clase \textit{High}, como se analizará posteriormente en los resultados de desempeño.
 \subsection{Análisis de Correlación}
 \begin{itemize}
 	\item[$\scalebox{0.7}{$\blacksquare$}$] Cálculo de la matriz de correlación:
@@ -311,13 +325,17 @@
 	\item[$\scalebox{0.7}{$\blacksquare$}$] Interpretación de las relaciones entre variables:
 \end{itemize}
 	
-	Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+	Dado que el mapa de calor (Figura 7) representa los mismos valores que la matriz de correlación, el análisis se centra en aquellos coeficientes que se sitúan en el rango $[0,8; 1,0]$, donde se localizan las relaciones más fuertes. Al observar la matriz, se evidencia que los únicos pares de variables que alcanzan el nivel máximo de correlación ($1,0$), excluyendo la diagonal principal, son \textit{pH} con \textit{pH\_escalado} y \textit{Temprature} con \textit{Temprature\_escalado}.
+	
+	Debido a que \textit{Temprature\_escalado} y \textit{pH\_escalado} son transformaciones directas de las variables originales \textit{Temprature} y \textit{pH} (las cuales recibieron tratamiento de escalado en la Fase 1 al ser las únicas variables no binarias), es lógico que presenten una relación lineal perfecta. Esta correspondencia directa asegura que la información original se preserva íntegramente tras la transformación, eliminando disparidades de magnitud y mejorando significativamente la eficiencia del algoritmo durante el entrenamiento del modelo logístico.
+	
+	Por otro lado, también se puede observar una tendencia compartida entre el Olor y la Turbidez; esto nos indica que la turbidez presente en la leche puede afectar un poco su olor y viceversa.
 
 \subsection{Implementación del Modelo de Regresión Logistica}
 
 \begin{itemize}
 	\item[$\scalebox{0.7}{$\blacksquare$}$] División del dataset en entrenamiento (80 \%) y prueba (20 \%).
-	Se definieron las variables predictoras $X$ y la variable objetivo $y$:
+	Se definió el conjunto de variables predictoras $X$ y la variable objetivo $y$:
 
 	\begin{verbatim}
 	X = df_milk[["Temprature_escalado", "pH_escalado", "Taste", 
@@ -352,12 +370,22 @@
 									    \captionof{table}{Métricas de evaluación del modelo de Regresión Logística}
 									    \label{tab:metricas}
 									\end{center}
+									Interpretación: tras la evaluación del modelo de regresión logística multiclase, se obtuvieron métricas de desempeño consistentes, con un \textit{Accuracy} de $0,8537$ y un \textit{F1-Score} de $0,8566$. La \textit{Precision} de $0,8660$ indica una alta confiabilidad en las predicciones positivas, minimizando la incidencia de falsos positivos en la clasificación de la calidad de la leche. 
+									
+									
+									
+									Por otro lado, el \textit{Recall} de $0,8537$ demuestra una capacidad robusta del algoritmo para identificar correctamente las clases dentro del conjunto de prueba. Dado que todas las métricas se encuentran en un rango similar por encima del $0,85$, se concluye que el modelo presenta un equilibrio óptimo entre sensibilidad y especificidad, siendo capaz de generalizar los patrones registrados en el Data Frame proporcionado a pesar del desbalance de clases identificado previamente.
 							\item[$\scalebox{0.3}{$\blacksquare$}$] Matriz de confusión
 									\begin{center}
 									    \includegraphics[width=0.8\textwidth]{images/matriz\_confusion.png}
 									    \captionof{figure}{Matriz de confusión}
 									    \label{fig:matriz de confusion}
 									\end{center}
+									Interpretación: Al analizar la matriz de confusión, se observa un desempeño sobresaliente en la clasificación de las categorías \textit{Medium} y \textit{Low}. El modelo logra predecir de manera casi exacta la pertenencia de las muestras en estas clases, incurriendo en solo $5$ y $8$ clasificaciones erróneas, respectivamente. Este alto nivel de acierto valida la eficacia de los coeficientes calculados para las características predominantes en el dataset.
+									
+									
+									
+									Por el contrario, al evaluar los resultados para la leche de calidad \textit{High}, se confirma la hipótesis planteada anteriormente: la escasez de muestras en esta categoría (desbalance de clases) afecta la precisión del algoritmo, derivando en la clasificación incorrecta de $18$ muestras. No obstante, al contrastar estos hallazgos con las métricas globales presentadas en el \textbf{Cuadro 2.4.1}, se ratifica que el modelo mantiene una robustez general notable, logrando un equilibrio predictivo eficiente a pesar de las limitaciones en la representatividad de la clase \textit{High}.
 
 					\end{itemize}
 	\item[$\scalebox{0.7}{$\blacksquare$}$] Interpretación de los coeficientes del modelo
@@ -368,35 +396,35 @@
 					\end{center}
 					
 					% Clase Alta
-							\subsubsection*{Clase: Alta (Buena)}
+							\subsubsection*{Clase: 'High' (Buena)}
 							\begin{center}
 							\begin{tabular}{lcp{8cm}}
 							\hline
 							\textbf{Característica} & \textbf{Coeficiente} & \textbf{Interpretación} \\
 							\hline
-							Fat         & $+3.45$ & \textbf{Característica más importante} — la categoría codificada como 1 está fuertemente asociada con la alta calidad en la leche \\
-							Odor        & $+1.96$ & la categoría codificada como 1 está fuertemente asociada con la alta calidad en la leche \\
-							Taste       & $+0.29$ & la categoría codificada como 1 tiene un nexo débil con la alta calidad en la leche \\
-							pH          & $+0.29$ & un pH alto puede tener un leve impacto positivo en la calidad de la leche \\
-							Turbidity   & $+0.03$ & la categoría codificada como 1 tiene un efecto prácticamente nulo en la alta calidad de la leche \\
-							Colour      & $+0.08$ & el color puede no tener impacto en la calidad de la leche \\
-							Temperature & $\mathbf{-0.97}$ & una temperatura alta puede tener un impacto negativo en la calidad de la leche \\
+							Fat         & $+3.45$ &  Un \textbf{buen contenido de grasa} tiene una alta influencia con la alta calidad en la leche \\
+							Odor        & $+1.96$ & Un \textbf{buen olor} está fuertemente asociada con la alta calidad en la leche \\
+							Taste       & $+0.29$ & El \textbf{tener sabor perceptible tiene un nexo débil} con la alta calidad en la leche \\
+							pH          & $+0.29$ & Un \textbf{pH alto puede tener un leve impacto positivo} en la calidad de la leche \\
+							Turbidity   & $+0.03$ & Se observa que \textbf{tener turbidez tiene un efecto prácticamente nulo} en la alta calidad de la leche \\
+							Colour      & $+0.08$ & El color puede no tener impacto en la calidad de la leche \\
+							Temperature & $\mathbf{-0.97}$ & Una temperatura alta puede tener un impacto negativo en la calidad de la leche \\
 							\hline
 							\end{tabular}
 							\end{center}
 							
 							% Clase Baja
-							\subsubsection*{Clase: Baja (Mala)}
+							\subsubsection*{Clase: Low (Mala)}
 							\begin{center}
 							\begin{tabular}{lcp{8cm}}
 							\hline
 							\textbf{Característica} & \textbf{Coeficiente} & \textbf{Interpretación} \\
 							\hline
-							Temperature & $\mathbf{+2.62}$ & \textbf{Característica importante} — altas temperaturas indican una mala calidad en la leche \\
-							Turbidity   & $+1.80$ & la categoría codificada como 1 está fuertemente asociada con la mala calidad en la leche \\
-							Taste       & $+1.75$ & la categoría codificada como 1 está fuertemente asociada con la mala calidad en la leche \\
-							Odor        & $-0.10$ & efecto prácticamente nulo \\
-							Fat         & $-0.99$ & la categoría codificada como 1 está fuertemente asociada con poca probabilidad de mala calidad en la leche \\
+							Temperature & $\mathbf{+2.62}$ & \textbf{Altas temperaturas} indican una mala calidad en la leche \\
+							Turbidity   & $+1.80$ & \textbf{La presencia de Turbidez está fuertemente asociada} con la mala calidad en la leche \\
+							Taste       & $+1.75$ & \textbf{Un sabor perceptible está asociado} con la mala calidad en la leche \\
+							Odor        & $-0.10$ & \textbf{El buen olor esta poco presente} en la leche de calidad baja siendo casi nulo.  \\
+							Fat         & $-0.99$ & Tener \textbf{una buena presencia de grasa está fuertemente asociada con poca probabilidad de mala calidad} en la leche \\
 							Colour      & $+0.23$ & un fuerte color puede tener un impacto leve en la mala calidad de la leche \\
 							pH          & $-0.42$ & un pH bajo puede estar levemente asociado a la mala calidad en la leche \\
 							\hline
@@ -404,17 +432,17 @@
 							\end{center}
 							
 							% Clase Media
-							\subsubsection*{Clase: Media (Moderada)}
+							\subsubsection*{Clase: Medium (Moderada)}
 							\begin{center}
 							\begin{tabular}{lcp{8cm}}
 							\hline
 							\textbf{Característica} & \textbf{Coeficiente} & \textbf{Interpretación} \\
 							\hline
-							Taste       & $\mathbf{-2.04}$ & la categoría codificada como 1 está fuertemente asociada en la baja probabilidad de calidad media en la leche \\
-							Fat         & $\mathbf{-2.45}$ & la categoría codificada como 1 está fuertemente asociada en la baja probabilidad de calidad media en la leche \\
-							Odor        & $\mathbf{-1.87}$ & la categoría codificada como 1 está fuertemente asociada en la baja probabilidad de calidad media en la leche \\
-							Turbidity   & $\mathbf{-1.83}$ & la categoría codificada como 1 está fuertemente asociada en la baja probabilidad de calidad media en la leche \\
-							Temperature & $-1.65$ & la alta temperatura tiene un impacto negativo en la probabilidad de calidad media en la leche \\
+							Taste       & $\mathbf{-2.04}$ & \textbf{Un buen sabor está fuertemente asociada} en la baja probabilidad de calidad media en la leche \\
+							Fat         & $\mathbf{-2.45}$ & \textbf{Una buena presencia de grasa} está fuertemente asociada en la baja probabilidad de calidad media en la leche \\
+							Odor        & $\mathbf{-1.87}$ & \textbf{El buen olor} está fuertemente asociada en la baja probabilidad de calidad media en la leche \\
+							Turbidity   & $\mathbf{-1.83}$ & \textbf{La presencia de turbidez} está fuertemente asociada en la baja probabilidad de calidad media en la leche \\
+							Temperature & $-1.65$ & \textbf{la alta temperatura tiene un impacto negativo} en la probabilidad de calidad media en la leche \\
 							Colour      & $-0.32$ & el color fuerte puede tener un impacto leve en la baja probabilidad de calidad media en la leche \\
 							pH          & $+0.13$ & el pH puede no tener impacto en la probabilidad de calidad media en la leche \\
 							\hline
@@ -430,9 +458,35 @@
 							\end{itemize}
 
 	\item[$\scalebox{0.7}{$\blacksquare$}$] Discusión de resultados y posibles mejoras
-
-	Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+	
+	Tras el análisis exhaustivo del desempeño del modelo y la naturaleza de los datos suministrados, se presentan las siguientes recomendaciones estratégicas para futuras iteraciones del proyecto:
+	
+	\begin{enumerate}
+		\item \textbf{Balanceo de la Muestra:} Se sugiere a la empresa implementar protocolos de recolección que garanticen un equilibrio en la representatividad de las categorías. Un conjunto de datos con una distribución más equitativa entre las clases \textit{High}, \textit{Medium} y \textit{Low} permitiría reducir el sesgo hacia la clase mayoritaria y mejorar significativamente la sensibilidad del modelo de regresión en la identificación de leche de alta calidad.
+		
+		
+		
+		\item \textbf{Control de Calidad en el Registro:} Si bien la incidencia de valores atípicos (\textit{outliers}) fue reducida, se recomienda optimizar los procesos de captura de datos en origen. Una mayor precisión y consistencia en el registro de las variables fisicoquímicas minimizaría el ruido estadístico, facilitando la generación de un modelo más depurado, con una frontera de decisión más clara y apegada a la realidad operativa de la planta.
+		
+		
+		
+		\item \textbf{Optimización de Variables Críticas:} Basándose en la magnitud de los coeficientes del modelo, se proponen las siguientes pautas operativas para maximizar la calidad del producto:
+		\begin{itemize}
+			\item \textbf{Potencial de Hidrógeno (pH):} Se observa que mantener niveles de pH controlados hacia el rango superior del estándar favorece la clasificación en categorías de alta calidad.
+			\item \textbf{Control Térmico:} La temperatura es un factor crítico; las lecturas elevadas presentan una correlación negativa con la calidad, por lo que se debe extremar el cuidado en la cadena de frío para evitar degradaciones significativas.
+			\item \textbf{Propiedades Organolépticas (Sabor y Olor):} Aunque el impacto del sabor es moderado, una intensidad excesiva o atípica puede penalizar la clasificación. Por el contrario, la preservación de un olor característico y agradable potencia significativamente la probabilidad de obtener una calificación \textit{High}.
+			\item \textbf{Contenido Graso (\textit{Fat}):} Esta característica se identifica como el factor más determinante para la leche de alta calidad. El modelo asigna un peso significativo a esta variable, por lo que optimizar los niveles de grasa es la ruta más directa para mejorar la calificación global del producto.
+			
+			\item \textbf{Claridad y Turbidez:} Se debe minimizar la turbidez en las muestras, ya que su presencia actúa como un predictor crítico de baja calidad dentro de las fronteras de decisión del algoritmo.
+			
+			\item \textbf{Atributos Visuales (\textit{Colour}):} El color es un indicador de pureza fundamental. Los resultados sugieren que tonalidades excesivamente fuertes o desviadas del blanco estándar están altamente correlacionadas con una clasificación de mala calidad, por lo que se requiere un control estricto de la apariencia visual.
+		\end{itemize}
+	\end{enumerate}
+	
+	Estas mejoras no solo incrementarían las métricas de \textit{Accuracy} y \textit{F1-Score} obtenidas ($0,8537$ y $0,8566$ respectivamente), sino que dotarían a la organización de una herramienta de auditoría de calidad mucho más robusta y confiable para la toma de decisiones.
 \end{itemize}
+
+{Todo el proceso detallado de estudio que fue realizado para llegar a las conclusiones presentadas puede ser visualizado através del siguiente enlace \url{https://github.com/kimachd/ESTADISTICA_sem_II_2025/tree/main/proyecto_2}/}\
 
 
 
