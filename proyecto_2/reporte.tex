@@ -96,6 +96,20 @@
 	
 	% ==================== PAGE ====================
 \newpage
+\section*{\centering Introducción}
+
+El análisis de datos y el aprendizaje supervisado se han consolidado como pilares fundamentales para la interpretación de fenómenos complejos en diversos sectores. El presente proyecto tiene como objetivo integrar los fundamentos teóricos de la estadística con la implementación computacional, abordando dos de los algoritmos más relevantes en la ciencia de datos: la \textbf{Regresión Lineal Simple} y la \textbf{Regresión Logística Multiclase}.
+
+
+
+La primera parte del estudio se enfoca en el análisis del conjunto de datos \textit{Salary}, donde se busca modelar la relación entre los años de experiencia y el salario percibido. A través de este ítem, se exploran las diferencias que puedan existir entre la solución analítica (Forma Teórica) y la optimización numérica mediante el algoritmo de \textbf{Descenso del Gradiente}, permitiendo validar la convergencia de parámetros en un modelo de predicción de valores continuos.
+
+Por otro lado, la segunda fase se orienta a la clasificación de la calidad láctea mediante un modelo logístico. A diferencia de la estimación de valores numéricos, este apartado aborda un problema de categorización basado en siete variables independientes. El desarrollo de esta etapa incluye un riguroso proceso de preprocesamiento, escalado de características y evaluación mediante métricas de desempeño como el \textit{Accuracy} y la matriz de confusión.
+
+
+
+A través de este enfoque dual, el proyecto no solo busca obtener resultados numéricos precisos, sino también desarrollar una capacidad crítica para interpretar cómo las variables del mundo real, ya sea el tiempo de carrera profesional o el pH de la leche, pueden ser modeladas matemáticamente para generar predicciones confiables y útiles en la toma de decisiones estratégicas.
+\newpage
 \section{Primera Parte: Implementación de un Modelo de Regresión Lineal Simple}
 
 \subsection{Comparar los parámetros obtenidos por ambos métodos}
@@ -130,7 +144,7 @@
 		\caption{Parámetros estimados por Descenso del Gradiente}
 		\end{table}
 		Conclusion:
-	    Como se puede apreciar en los Cuadros 1.1.1 y 1.1.2, al contrastar los resultados obtenidos mediante el método de Mínimos Cuadrados Ordinarios (MCO) y el algoritmo de Descenso del Gradiente, se observa una convergencia significativa en los parámetros calculados. 
+	    Como se puede apreciar en los Cuadros 1.1.1 y 1.1.2, al contrastar los resultados obtenidos mediante el método de Mínimos Cuadrados Ordinarios (MCO) y el algoritmo de Descenso del Gradiente, se observan valores similares en los parámetros calculados. 
 		
 		Específicamente, se halló una diferencia numérica de apenas $6.9883$ para el coeficiente de la pendiente ($\hat{\beta}_1$) y de $76.1065$ para el intercepto ($\hat{\beta}_0$). Esta proximidad en los valores de $\hat{\beta}_1$ y $\hat{\beta}_0$ indica que ambos métodos, a pesar de seguir procedimientos de optimización distintos, tienden a coincidir en la definición de la recta de regresión sobre la data empleada, validando así la precisión de la implementación numérica del gradiente frente a la solución analítica.
 
@@ -485,7 +499,26 @@ Este comportamiento evidencia que las clases se encuentran desbalanceadas. En co
 	
 	Estas mejoras no solo incrementarían las métricas de \textit{Accuracy} y \textit{F1-Score} obtenidas ($0,8537$ y $0,8566$ respectivamente), sino que dotarían a la organización de una herramienta de auditoría de calidad mucho más robusta y confiable para la toma de decisiones.
 \end{itemize}
+\newpage
+\section*{\centering Conclusiones}
 
+El desarrollo de este proyecto permitió consolidar de manera práctica los fundamentos de la regresión lineal y logística, aplicando tanto soluciones analíticas como algoritmos de optimización numérica sobre conjuntos de datos reales.
+
+\subsection*{Eficacia del Ajuste Lineal (Ítem 1: Salary Dataset)}
+En la primera fase, la implementación del modelo de regresión lineal simple para predecir el salario en función de los años de experiencia validó la precisión del \textbf{Descenso del Gradiente} frente a la \textbf{Forma Teórica}. La convergencia de los parámetros con una diferencia marginal de $6,9883$ en la pendiente y $76,1065$ en el sesgo demuestra que, el algoritmo iterativo es capaz de alcanzar la solución óptima global de la función de pérdida. El ajuste obtenido, con un $R^2$ de $0,803381$, ratifica que la experiencia es un predictor robusto y linealmente relacionado con la estructura salarial analizada.
+
+
+
+\subsection*{Robustez en la Clasificación (Ítem 2: Calidad de la Leche)}
+En la segunda fase, el uso de regresión logística multiclase para categorizar la calidad de la leche demostró la importancia crítica del preprocesamiento y el análisis estadístico descriptivo. Las conclusiones clave de esta etapa incluyen:
+\begin{itemize}
+	\item \textbf{Impacto de las Variables:} El escalado de pH y Temperatura fue determinante para estabilizar el modelo. El análisis de coeficientes identificó al contenido graso y al pH como los promotores de calidad más significativos, mientras que la turbidez y las altas temperaturas actúan como indicadores de degradación.
+	\item \textbf{Desempeño del Modelo:} Se alcanzó un \textit{Accuracy} de $0,8537$ y un \textit{F1-Score} de $0,8566$. Aunque el desbalance de clases afectó la precisión en la categoría \textit{High} (18 clasificaciones erróneas), el modelo mostró una fiabilidad sobresaliente para las clases \textit{Low} y \textit{Medium}.
+\end{itemize}
+
+En conclusión, el proyecto demuestra que mientras la regresión lineal es ideal para estimar valores continuos (salarios), la regresión logística, apoyada en una correcta interpretación de la matriz de confusión y métricas de precisión, constituye una herramienta poderosa para la clasificación técnica de productos. La integración de herramientas computacionales con el análisis estadístico permitió transformar datos brutos en información estratégica para la toma de decisiones en entornos industriales y corporativos.
+
+\vspace{2cm}
 {Todo el proceso detallado de estudio que fue realizado para llegar a las conclusiones presentadas puede ser visualizado através del siguiente enlace \url{https://github.com/kimachd/ESTADISTICA_sem_II_2025/tree/main/proyecto_2}/}\
 
 
